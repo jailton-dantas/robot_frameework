@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.12.4 on win32)" generated="2024-07-16T16:43:53.687508" rpa="false" schemaversion="5">
+<suite id="s1" name="Argumentos" source="C:\Treinamentos\RobotFramework\VariaveisEscoposArgumentos\argumentos.robot">
+<test id="s1-t1" name="Imprimindo um e-mail customizado e aleatório" line="8">
+<kw name="Criar e-mail customizado e aleatório">
+<kw name="Generate Random String" owner="String">
+<msg time="2024-07-16T16:43:53.734480" level="INFO">${ALEATORIA} = 3aknJgfl</msg>
+<var>${ALEATORIA}</var>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<status status="PASS" start="2024-07-16T16:43:53.734480" elapsed="0.000000"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-07-16T16:43:53.734480" level="INFO">${EMAIL_FINAL} = MayFernandes3aknJgfl@testerobot.com</msg>
+<var>${EMAIL_FINAL}</var>
+<arg>${NOME}${SOBRENOME}${ALEATORIA}@testerobot.com</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-07-16T16:43:53.734480" elapsed="0.000000"/>
+</kw>
+<return>
+<value>${EMAIL_FINAL}</value>
+<status status="PASS" start="2024-07-16T16:43:53.734480" elapsed="0.000000"/>
+</return>
+<msg time="2024-07-16T16:43:53.734480" level="INFO">${EMAIL_CRIADO} = MayFernandes3aknJgfl@testerobot.com</msg>
+<var>${EMAIL_CRIADO}</var>
+<arg>${PESSOA.nome}</arg>
+<arg>${PESSOA.sobrenome}</arg>
+<status status="PASS" start="2024-07-16T16:43:53.733480" elapsed="0.001000"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${EMAIL_CRIADO}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-07-16T16:43:53.735480" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-07-16T16:43:53.732479" elapsed="0.003001"/>
+</test>
+<status status="PASS" start="2024-07-16T16:43:53.689515" elapsed="0.046967"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Argumentos">Argumentos</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-07-16T16:43:53.682425" level="WARN">Error in file 'C:\Treinamentos\RobotFramework\VariaveisEscoposArgumentos\argumentos.robot' on line 18: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+</errors>
+</robot>

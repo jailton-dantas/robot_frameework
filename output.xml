@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.12.4 on win32)" generated="2024-07-16T16:39:51.347421" rpa="false" schemaversion="5">
+<suite id="s1" name="Argumentos" source="c:\Treinamentos\RobotFramework\VariaveisEscoposArgumentos\argumentos.robot">
+<test id="s1-t1" name="Generate Custom Email Test" line="14">
+<kw name="Generate Custom Email">
+<msg time="2024-07-16T16:39:51.558337" level="FAIL">User keyword cannot be empty.</msg>
+<var>${custom_email}</var>
+<arg>${FIRST_NAME}</arg>
+<arg>${LAST_NAME}</arg>
+<status status="FAIL" start="2024-07-16T16:39:51.558082" elapsed="0.003068">User keyword cannot be empty.</status>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${custom_email}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" start="2024-07-16T16:39:51.561804" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-07-16T16:39:51.556602" elapsed="0.005751">User keyword cannot be empty.</status>
+</test>
+<status status="FAIL" start="2024-07-16T16:39:51.352078" elapsed="0.211976"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Argumentos">Argumentos</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-07-16T16:39:51.555089" level="WARN">Imported library 'c:\Treinamentos\RobotFramework\VariaveisEscoposArgumentos\fake_email_library.py' contains no keywords.</msg>
+</errors>
+</robot>
